@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/knowledge-center-tabs",
+      "handler": "knowledge-center-tab.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/knowledge-center-tabs/count",
+      "handler": "knowledge-center-tab.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/knowledge-center-tabs/:id",
+      "handler": "knowledge-center-tab.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/knowledge-center-tabs",
+      "handler": "knowledge-center-tab.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/knowledge-center-tabs/:id",
+      "handler": "knowledge-center-tab.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/knowledge-center-tabs/:id",
+      "handler": "knowledge-center-tab.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

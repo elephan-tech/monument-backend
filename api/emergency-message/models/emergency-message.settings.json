@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "emergency_messages",
+  "info": {
+    "name": "EmergencyMessage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "display": {
+      "type": "boolean"
+    }
+  }
+}

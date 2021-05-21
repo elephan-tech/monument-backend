@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_medias",
+  "info": {
+    "name": "Social Media"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "display": {
+      "type": "boolean"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "fill": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    }
+  }
+}

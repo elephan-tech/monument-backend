@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item_title": {
+      "type": "string"
+    },
+    "item_description": {
+      "type": "text"
+    },
+    "download": {
+      "type": "boolean"
+    }
+  }
+}

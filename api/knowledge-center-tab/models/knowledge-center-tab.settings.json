@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "knowledge_center_tabs",
+  "info": {
+    "name": "knowledge center tab",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "items": {
+      "collection": "item"
+    }
+  }
+}

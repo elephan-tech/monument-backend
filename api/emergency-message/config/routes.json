@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/emergency-message",
+      "handler": "emergency-message.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/emergency-message",
+      "handler": "emergency-message.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/emergency-message",
+      "handler": "emergency-message.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
