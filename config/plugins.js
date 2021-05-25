@@ -1,18 +1,18 @@
-module.exports = ({ env }) => ({
-  email: {
-    provider: "nodemailer",
-    providerOptions: {
-      service: "gmail",
-      port: 587,
-      auth: {
-        user: "monumentacademycontact@gmail.com",
-        pass: "Monument4cademy",
+module.exports = ({ env }) =>
+  console.log({ env: env.json() }) || {
+    email: {
+      provider: "nodemailer",
+      providerOptions: {
+        service: "gmail",
+        port: 587,
+        auth: {
+          user: "contact.monumentacademydc@gmail.com",
+          pass: "monument_contact",
+        },
       },
-      // ... any custom nodemailer options
+      settings: {
+        defaultFrom: "contact.monumentacademydc@gmail.com",
+        defaultReplyTo: "info@monumentacademydc.org",
+      },
     },
-    settings: {
-      defaultFrom: "monumentacademycontact@gmail.com",
-      defaultReplyTo: "info@monumentacademydc.org",
-    },
-  },
-});
+  };
