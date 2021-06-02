@@ -18,11 +18,7 @@
     "image": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -35,6 +31,9 @@
     },
     "category": {
       "model": "categories"
+    },
+    "article_type": {
+      "type": "string"
     }
   }
 }
