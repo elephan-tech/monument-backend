@@ -27,7 +27,7 @@ const A = styled.a`
   }
 
   &:visited {
-    color: ${props => props.theme.main.colors.leftMenu['link-color']};
+    color: ${props => props.theme.main.colors.monumentGray};
   }
 
   &.linkActive {
