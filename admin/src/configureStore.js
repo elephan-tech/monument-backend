@@ -32,7 +32,7 @@ export default function configureStore(initialState = {}, reducers, strapi) {
           // TODO Try to remove when `react-router-redux` is out of beta, LOCATION_CHANGE should not be fired more than once after hot reloading
           // Prevent recomputing reducers for `replaceReducer`
           shouldHotReload: false,
-          name: 'Strapi - Dashboard',
+          name: 'Monument Academy - Dashboard',
         })
       : compose;
   /* eslint-enable */
