@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_types_content_types",
+  "info": {
+    "name": "content-type",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "isSingleType": {
+      "type": "boolean"
+    }
+  }
+}

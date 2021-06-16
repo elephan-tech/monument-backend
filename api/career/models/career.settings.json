@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "job_postings",
+  "collectionName": "careers",
   "info": {
     "name": "Career",
     "description": ""
@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "jobTitle": {
       "type": "string"
     },
-    "description": {
+    "shortDescription": {
       "type": "richtext"
     },
-    "date_posted": {
+    "datePosted": {
       "type": "datetime"
     },
     "attachment": {
@@ -46,8 +46,11 @@
     "category": {
       "model": "categories"
     },
-    "link": {
+    "url": {
       "type": "string"
+    },
+    "display": {
+      "type": "boolean"
     }
   }
 }

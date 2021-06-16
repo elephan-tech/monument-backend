@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/job-postings",
-      "handler": "job-posting.find",
+      "path": "/careers",
+      "handler": "career.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/job-postings/count",
-      "handler": "job-posting.count",
+      "path": "/careers/count",
+      "handler": "career.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/job-postings/:id",
-      "handler": "job-posting.findOne",
+      "path": "/careers/:id",
+      "handler": "career.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/job-postings",
-      "handler": "job-posting.create",
+      "path": "/careers",
+      "handler": "career.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/job-postings/:id",
-      "handler": "job-posting.update",
+      "path": "/careers/:id",
+      "handler": "career.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/job-postings/:id",
-      "handler": "job-posting.delete",
+      "path": "/careers/:id",
+      "handler": "career.delete",
       "config": {
         "policies": []
       }
