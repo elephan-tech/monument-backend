@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/monumental-moments",
+      "handler": "monumental-moments.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monumental-moments/count",
+      "handler": "monumental-moments.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monumental-moments/:id",
+      "handler": "monumental-moments.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/monumental-moments",
+      "handler": "monumental-moments.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/monumental-moments/:id",
+      "handler": "monumental-moments.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/monumental-moments/:id",
+      "handler": "monumental-moments.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
