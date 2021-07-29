@@ -30,14 +30,11 @@
     "content": {
       "type": "richtext"
     },
-    "date_created": {
+    "date": {
       "type": "datetime"
     },
     "category": {
       "model": "categories"
-    },
-    "article_type": {
-      "type": "string"
     },
     "name": {
       "type": "string"
