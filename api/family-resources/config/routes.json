@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/family-resources",
+      "handler": "family-resources.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/family-resources/count",
+      "handler": "family-resources.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/family-resources/:id",
+      "handler": "family-resources.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/family-resources",
+      "handler": "family-resources.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/family-resources/:id",
+      "handler": "family-resources.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/family-resources/:id",
+      "handler": "family-resources.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

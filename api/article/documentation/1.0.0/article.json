@@ -522,7 +522,7 @@
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
           "image": {
@@ -624,15 +624,18 @@
           "article_type": {
             "type": "string"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "name": {
+            "type": "string"
+          },
+          "display": {
+            "type": "boolean",
+            "default": false
           }
         }
       },
       "NewArticle": {
         "properties": {
-          "Title": {
+          "title": {
             "type": "string"
           },
           "content": {
@@ -648,9 +651,12 @@
           "article_type": {
             "type": "string"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "name": {
+            "type": "string"
+          },
+          "display": {
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

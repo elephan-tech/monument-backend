@@ -7,4 +7,11 @@ module.exports = ({ env }) => ({
       ignoreTLS: true,
     },
   },
+  upload: {
+    providerOptions: {
+      localServer: {
+        maxage: 3000000,
+      },
+    },
+  },
 });

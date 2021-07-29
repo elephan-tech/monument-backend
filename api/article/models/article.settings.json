@@ -8,17 +8,21 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
     "image": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images", "files", "videos"],
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -34,6 +38,13 @@
     },
     "article_type": {
       "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "display": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

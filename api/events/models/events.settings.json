@@ -1,30 +1,35 @@
 {
   "kind": "collectionType",
-  "collectionName": "events",
+  "collectionName": "event",
   "info": {
-    "name": "events"
+    "name": "event",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "date": {
-      "type": "datetime"
-    },
-    "localAsset": {
-      "type": "string"
+      "type": "datetime",
+      "pluginOptions": {},
+      "default": "2021-07-27T17:00:00.000Z",
+      "required": false
     },
     "display": {
-      "type": "boolean"
+      "type": "boolean",
+      "pluginOptions": {},
+      "default": true
     },
     "eventLink": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "file": {
       "collection": "file",

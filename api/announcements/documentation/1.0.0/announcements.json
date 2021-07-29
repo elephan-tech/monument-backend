@@ -522,9 +522,6 @@
           "id": {
             "type": "string"
           },
-          "displayText": {
-            "type": "string"
-          },
           "image": {
             "type": "array",
             "items": {
@@ -670,90 +667,31 @@
             "format": "date-time"
           },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "link": {
             "type": "string"
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "displayText": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "file": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "date": {
-                  "type": "string"
-                },
-                "display": {
-                  "type": "boolean"
-                },
-                "link": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
+          "name": {
             "type": "string"
           }
         }
       },
       "NewAnnouncements": {
         "properties": {
-          "displayText": {
-            "type": "string"
-          },
           "date": {
             "type": "string",
             "format": "date-time"
           },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "link": {
             "type": "string"
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "locale": {
+          "name": {
             "type": "string"
           },
           "created_by": {

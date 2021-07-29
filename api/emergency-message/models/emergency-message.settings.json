@@ -24,10 +24,8 @@
     "display": {
       "type": "boolean"
     },
-    "contentType": {
-      "type": "component",
-      "repeatable": true,
-      "component": "types.content-type"
+    "name": {
+      "type": "string"
     }
   }
 }

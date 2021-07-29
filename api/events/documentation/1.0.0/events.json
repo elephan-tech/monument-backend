@@ -527,13 +527,12 @@
           },
           "date": {
             "type": "string",
-            "format": "date-time"
-          },
-          "localAsset": {
-            "type": "string"
+            "format": "date-time",
+            "default": "2021-07-27T17:00:00.000Z"
           },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "eventLink": {
             "type": "string"
@@ -610,10 +609,6 @@
           },
           "slug": {
             "type": "uid"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
           }
         }
       },
@@ -624,23 +619,18 @@
           },
           "date": {
             "type": "string",
-            "format": "date-time"
-          },
-          "localAsset": {
-            "type": "string"
+            "format": "date-time",
+            "default": "2021-07-27T17:00:00.000Z"
           },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "eventLink": {
             "type": "string"
           },
           "slug": {
             "type": "uid"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
           },
           "created_by": {
             "type": "string"
