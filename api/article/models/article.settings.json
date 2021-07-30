@@ -33,15 +33,21 @@
     "date": {
       "type": "datetime"
     },
-    "category": {
-      "model": "categories"
-    },
     "name": {
       "type": "string"
     },
     "display": {
       "type": "boolean",
       "default": false
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }

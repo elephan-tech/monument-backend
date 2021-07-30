@@ -18,7 +18,7 @@
     "shortDescription": {
       "type": "richtext"
     },
-    "datePosted": {
+    "date": {
       "type": "datetime"
     },
     "attachment": {
@@ -42,9 +42,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "category": {
-      "model": "categories"
     },
     "url": {
       "type": "string"

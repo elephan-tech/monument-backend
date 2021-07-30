@@ -599,34 +599,21 @@
             "type": "string",
             "format": "date-time"
           },
-          "category": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "name": {
             "type": "string"
           },
           "display": {
             "type": "boolean",
             "default": false
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
           }
         }
       },
@@ -642,15 +629,21 @@
             "type": "string",
             "format": "date-time"
           },
-          "category": {
-            "type": "string"
-          },
           "name": {
             "type": "string"
           },
           "display": {
             "type": "boolean",
             "default": false
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
