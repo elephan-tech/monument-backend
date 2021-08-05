@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/30/2021 11:38:02 AM"
+    "x-generation-date": "08/04/2021 11:51:03 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9896,6 +9896,20 @@
               }
             }
           },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "display": {
+            "type": "boolean",
+            "default": true
+          },
+          "link": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
           "file": {
             "type": "array",
             "items": {
@@ -9965,20 +9979,6 @@
                 }
               }
             }
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "display": {
-            "type": "boolean",
-            "default": true
-          },
-          "link": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
           }
         }
       },
@@ -10156,156 +10156,80 @@
           "name": {
             "type": "string"
           },
-          "end": {
-            "type": "string"
+          "date": {
+            "type": "string",
+            "format": "date-time"
           },
           "start": {
             "type": "string"
           },
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "display": {
-            "type": "boolean"
+          "end": {
+            "type": "string"
           },
           "agenda": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "meeting_recording": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -10378,6 +10302,76 @@
                 }
               }
             }
+          },
+          "meetingRecording": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "display": {
+            "type": "boolean"
           }
         }
       },
@@ -10386,15 +10380,15 @@
           "name": {
             "type": "string"
           },
-          "end": {
-            "type": "string"
+          "date": {
+            "type": "string",
+            "format": "date-time"
           },
           "start": {
             "type": "string"
           },
-          "date": {
-            "type": "string",
-            "format": "date"
+          "end": {
+            "type": "string"
           },
           "display": {
             "type": "boolean"
@@ -10418,82 +10412,9 @@
           "name": {
             "type": "string"
           },
-          "shortDescription": {
-            "type": "string"
-          },
           "date": {
             "type": "string",
             "format": "date-time"
-          },
-          "attachment": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "image": {
             "required": [
@@ -10568,6 +10489,9 @@
           "display": {
             "type": "boolean"
           },
+          "shortDescription": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -10579,9 +10503,6 @@
           "name": {
             "type": "string"
           },
-          "shortDescription": {
-            "type": "string"
-          },
           "date": {
             "type": "string",
             "format": "date-time"
@@ -10591,6 +10512,9 @@
           },
           "display": {
             "type": "boolean"
+          },
+          "shortDescription": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -10757,6 +10681,9 @@
           "eventLink": {
             "type": "string"
           },
+          "slug": {
+            "type": "uid"
+          },
           "file": {
             "type": "array",
             "items": {
@@ -10826,9 +10753,6 @@
                 }
               }
             }
-          },
-          "slug": {
-            "type": "uid"
           }
         }
       },
@@ -11286,9 +11210,6 @@
           "title": {
             "type": "string"
           },
-          "content": {
-            "type": "string"
-          },
           "image": {
             "required": [
               "id",
@@ -11357,11 +11278,11 @@
             }
           },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "description": {
+            "type": "string"
           }
         }
       },
@@ -11370,15 +11291,12 @@
           "title": {
             "type": "string"
           },
-          "content": {
-            "type": "string"
-          },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "description": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

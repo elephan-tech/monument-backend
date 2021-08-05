@@ -592,6 +592,20 @@
               }
             }
           },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "display": {
+            "type": "boolean",
+            "default": true
+          },
+          "link": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
           "file": {
             "type": "array",
             "items": {
@@ -661,20 +675,6 @@
                 }
               }
             }
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "display": {
-            "type": "boolean",
-            "default": true
-          },
-          "link": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
           }
         }
       },

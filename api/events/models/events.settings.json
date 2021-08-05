@@ -31,20 +31,20 @@
       "type": "string",
       "pluginOptions": {}
     },
+    "slug": {
+      "type": "uid"
+    },
     "file": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "slug": {
-      "type": "uid"
     }
   }
 }

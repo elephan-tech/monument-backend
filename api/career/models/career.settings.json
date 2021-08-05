@@ -15,21 +15,8 @@
     "name": {
       "type": "string"
     },
-    "shortDescription": {
-      "type": "richtext"
-    },
     "date": {
       "type": "datetime"
-    },
-    "attachment": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
     },
     "image": {
       "model": "file",
@@ -48,6 +35,9 @@
     },
     "display": {
       "type": "boolean"
+    },
+    "shortDescription": {
+      "type": "text"
     }
   }
 }

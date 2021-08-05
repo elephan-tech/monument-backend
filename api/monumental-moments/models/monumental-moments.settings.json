@@ -8,15 +8,12 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "content": {
-      "type": "richtext"
     },
     "image": {
       "model": "file",
@@ -29,7 +26,11 @@
       "pluginOptions": {}
     },
     "display": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

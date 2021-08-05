@@ -22,18 +22,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "file": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "date": {
       "type": "datetime",
       "pluginOptions": {}
@@ -49,6 +37,16 @@
     },
     "name": {
       "type": "string"
+    },
+    "file": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

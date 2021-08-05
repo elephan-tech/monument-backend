@@ -537,6 +537,9 @@
           "eventLink": {
             "type": "string"
           },
+          "slug": {
+            "type": "uid"
+          },
           "file": {
             "type": "array",
             "items": {
@@ -606,9 +609,6 @@
                 }
               }
             }
-          },
-          "slug": {
-            "type": "uid"
           }
         }
       },

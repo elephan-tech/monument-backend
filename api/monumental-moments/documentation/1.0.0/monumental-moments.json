@@ -538,9 +538,6 @@
           "title": {
             "type": "string"
           },
-          "content": {
-            "type": "string"
-          },
           "image": {
             "required": [
               "id",
@@ -609,11 +606,11 @@
             }
           },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "description": {
+            "type": "string"
           }
         }
       },
@@ -622,15 +619,12 @@
           "title": {
             "type": "string"
           },
-          "content": {
-            "type": "string"
-          },
           "display": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "description": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
