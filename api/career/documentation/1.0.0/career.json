@@ -666,6 +666,10 @@
               }
             }
           },
+          "display": {
+            "type": "boolean",
+            "default": false
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -683,6 +687,10 @@
           },
           "shortDescription": {
             "type": "string"
+          },
+          "display": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",

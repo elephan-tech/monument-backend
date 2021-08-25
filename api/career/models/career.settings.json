@@ -42,6 +42,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "display": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
