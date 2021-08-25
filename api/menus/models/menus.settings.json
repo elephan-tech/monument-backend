@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "menus",
   "info": {
-    "name": "menus"
+    "name": "menus",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -64,6 +65,18 @@
     },
     "display": {
       "type": "boolean"
+    },
+    "vegetarian": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
