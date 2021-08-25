@@ -30,14 +30,18 @@
       "required": false,
       "pluginOptions": {}
     },
-    "url": {
-      "type": "string"
-    },
-    "display": {
-      "type": "boolean"
-    },
     "shortDescription": {
       "type": "text"
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
