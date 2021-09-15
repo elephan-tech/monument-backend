@@ -1,0 +1,11 @@
+{
+  "provider": "aws-s3",
+  "providerOptions": {
+    "accessKeyId": "AKIA5TMQG7UOPD64MQEN",
+    "secretAccessKey": "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",
+    "region": "us-east-1",
+    "params": {
+      "Bucket": "monument-academy"
+    }
+  }
+}
