@@ -106,7 +106,7 @@ Object.keys(plugins).forEach(current => {
     merge(translationMessages, pluginTradsPrefixed);
     pluginsToLoad.push(plugin);
   } catch (err) {
-    console.log({ err });
+    console.error({ err });
   }
 });
 
