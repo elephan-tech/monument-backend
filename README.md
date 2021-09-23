@@ -31,7 +31,7 @@ npm run develop
 ```
 ![strapi_server](./assets/strapi_server.png?raw=true)
 
-2. open http://localhost:1338/dashboard
+2. open http://localhost:1337/dashboard
 3. Register with email and password
 4. Landing:
 
