@@ -603,6 +603,9 @@
             "type": "boolean",
             "default": false
           },
+          "url": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -624,6 +627,9 @@
           "display": {
             "type": "boolean",
             "default": false
+          },
+          "url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
