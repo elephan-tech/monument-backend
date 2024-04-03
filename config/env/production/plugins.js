@@ -9,7 +9,7 @@ module.exports = ({ env }) => {
         port: 587,
         auth: {
           user: "contact.monumentacademydc@gmail.com",
-          pass: "monument_contact",
+          pass: "fagj idic ugwo mdiv",
         },
       },
       settings: {
